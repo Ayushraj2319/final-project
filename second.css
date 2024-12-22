@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+#quiz-container, #results-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+    background-image: url('https://cdn.prod.website-files.com/64d9c06eb20aa28a284c6beb/6615f7d2fc0a87d72a194016_Top%2012%20Cricketers%20and%20their%20zodiac%20signs.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#timer {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.question {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#navigation-buttons {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}

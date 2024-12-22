@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+
+  <link rel="icon" type="image/x-icon" href="/Users/apple/Desktop/website/favicon.ico">
+  <link rel="stylesheet" href="second.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>Quiz: CRICKET GEEKS</h1>
+    <div id="timer">Time Remaining: <span id="time">60</span> seconds</div>
+
+    <form id="quiz-form">
+      <div class="question" id="question-1">
+        <p>1. How many centuries has Virat Kohli scored in One Day Internationals?</p>
+        <label><input type="radio" name="q1" value="a"> 49</label><br>
+        <label><input type="radio" name="q1" value="b"> 50</label><br>
+        <label><input type="radio" name="q1" value="c"> 51</label><br>
+      </div>
+
+      <div class="question" id="question-2" style="display: none;">
+        <p>2. "E sala cup namde" is associated with which IPL team?</p>
+        <label><input type="radio" name="q2" value="a"> Royal Challengers Bangalore</label><br>
+        <label><input type="radio" name="q2" value="b"> Mumbai Indians</label><br>
+        <label><input type="radio" name="q2" value="c"> Kolkata Knight Riders</label><br>
+      </div>
+
+      <div class="question" id="question-3" style="display: none;">
+        <p>3. Which IPL team was banned for two years?</p>
+        <label><input type="radio" name="q3" value="a"> CSK</label><br>
+        <label><input type="radio" name="q3" value="b"> RCB</label><br>
+        <label><input type="radio" name="q3" value="c"> MI</label><br>
+      </div>
+      <!-- Add the rest of the questions in a similar fashion -->
+
+      <div id="navigation-buttons">
+        <button type="button" id="previous-btn" onclick="navigateQuestion(-1)">Previous</button>
+        <button type="button" id="next-btn" onclick="navigateQuestion(1)">Next</button>
+      </div>
+
+      <button type="button" id="submit-btn" onclick="showresults()">Submit</button>
+    </form>
+  </div>
+
+  <div id="results-container" class="hidden">
+    <h1>Quiz Results</h1>
+    <p id="score"></p>
+    <p><button onclick="window.location.reload();">Retry</button></p>
+  </div>
+
+  <script src="third.js"></script>
+</body>
+</html>
