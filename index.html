@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Ayush Raj | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- NAVBAR -->
-  <nav>
-    <h2>Ayush Raj</h2>
-    <ul>
+  <nav class="navbar">
+    <h2 class="logo">Ayush Raj</h2>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -25,58 +26,84 @@
     <h1>Ayush Raj</h1>
     <p>Computer Science Student • Developer • AI Enthusiast</p>
 
-    <a href="https://www.linkedin.com/in/ayush-raj-184832327/" class="btn">LinkedIn</a>
-    <a href="https://github.com/Ayushraj2319" class="btn">GitHub</a>
+    <div class="hero-buttons">
+      <a class="btn" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://github.com/Ayushraj2319" target="_blank">GitHub</a>
+    </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
       Motivated Computer Science student with hands-on experience in programming,
-      development, and AI-based projects.
+      web development, and AI-based projects. Passionate about learning new
+      technologies and solving real-world problems.
     </p>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
+  <section id="skills" class="section">
+    <h2 class="section-title">Technical Skills</h2>
 
-    <div class="card">Python, Java, C</div>
-    <div class="card">HTML, CSS, JavaScript</div>
-    <div class="card">Git, GitHub, VS Code</div>
-    <div class="card">AI Tools, APIs</div>
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <p>Python, Java, C</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Web Technologies</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <p>Git, GitHub, VS Code</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>AI Tools</h3>
+      <p>APIs, Automation</p>
+    </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
 
-    
-
-    <div class="project">
+    <div class="project-card">
       <h3>AI Garbage Collector</h3>
-      <p>AI-based automation simulation.</p>
+      <p>
+        AI-based automation simulation project designed to optimize garbage
+        collection using intelligent decision-making.
+      </p>
     </div>
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section id="certifications">
-    <h2>Certifications & Achievements</h2>
-    <p>AWS Certified Cloud Practitioner</p>
-    <p>Python Internship – CodSoft</p>
+  <section id="certifications" class="section">
+    <h2 class="section-title">Certifications & Achievements</h2>
+    <ul class="list">
+      <li>AWS Certified Cloud Practitioner</li>
+      <li>Python Internship – CodSoft</li>
+    </ul>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Me</h2>
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
 
-    <input type="text" placeholder="Ayush Raj">
-    <input type="email" placeholder="araj84265@gmail.com">
-    <textarea placeholder="Your Message"></textarea>
-    <button>Send</button>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button class="btn">Send</button>
+    </form>
   </section>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>© 2026 Ayush Raj</p>
+  </footer>
+
 </body>
 </html>
