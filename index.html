@@ -2,55 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Quiz</title>
-
-  <link rel="icon" type="image/x-icon" href="/Users/apple/Desktop/website/favicon.ico">
-  <link rel="stylesheet" href="second.css">
+  <title>Ayush Raj | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="quiz-container">
-    <h1>Quiz: CRICKET GEEKS</h1>
-    <div id="timer">Time Remaining: <span id="time">60</span> seconds</div>
 
-    <form id="quiz-form">
-      <div class="question" id="question-1">
-        <p>1. How many centuries has Virat Kohli scored in One Day Internationals?</p>
-        <label><input type="radio" name="q1" value="a"> 49</label><br>
-        <label><input type="radio" name="q1" value="b"> 50</label><br>
-        <label><input type="radio" name="q1" value="c"> 51</label><br>
-      </div>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Ayush Raj</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-      <div class="question" id="question-2" style="display: none;">
-        <p>2. "E sala cup namde" is associated with which IPL team?</p>
-        <label><input type="radio" name="q2" value="a"> Royal Challengers Bangalore</label><br>
-        <label><input type="radio" name="q2" value="b"> Mumbai Indians</label><br>
-        <label><input type="radio" name="q2" value="c"> Kolkata Knight Riders</label><br>
-      </div>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Ayush Raj</h1>
+    <p>Computer Science Student • Developer • AI Enthusiast</p>
 
-      <div class="question" id="question-3" style="display: none;">
-        <p>3. Which IPL team was banned for two years?</p>
-        <label><input type="radio" name="q3" value="a"> CSK</label><br>
-        <label><input type="radio" name="q3" value="b"> RCB</label><br>
-        <label><input type="radio" name="q3" value="c"> MI</label><br>
-      </div>
-      <!-- Add the rest of the questions in a similar fashion -->
+    <a href="https://www.linkedin.com/in/ayush-raj-184832327/" class="btn">LinkedIn</a>
+    <a href="https://github.com/Ayushraj2319" class="btn">GitHub</a>
+  </section>
 
-      <div id="navigation-buttons">
-        <button type="button" id="previous-btn" onclick="navigateQuestion(-1)">Previous</button>
-        <button type="button" id="next-btn" onclick="navigateQuestion(1)">Next</button>
-      </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Motivated Computer Science student with hands-on experience in programming,
+      development, and AI-based projects.
+    </p>
+  </section>
 
-      <button type="button" id="submit-btn" onclick="showresults()">Submit</button>
-    </form>
-  </div>
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
 
-  <div id="results-container" class="hidden">
-    <h1>Quiz Results</h1>
-    <p id="score"></p>
-    <p><button onclick="window.location.reload();">Retry</button></p>
-  </div>
+    <div class="card">Python, Java, C</div>
+    <div class="card">HTML, CSS, JavaScript</div>
+    <div class="card">Git, GitHub, VS Code</div>
+    <div class="card">AI Tools, APIs</div>
+  </section>
 
-  <script src="third.js"></script>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    
+
+    <div class="project">
+      <h3>AI Garbage Collector</h3>
+      <p>AI-based automation simulation.</p>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <h2>Certifications & Achievements</h2>
+    <p>AWS Certified Cloud Practitioner</p>
+    <p>Python Internship – CodSoft</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <input type="text" placeholder="Ayush Raj">
+    <input type="email" placeholder="araj84265@gmail.com">
+    <textarea placeholder="Your Message"></textarea>
+    <button>Send</button>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
